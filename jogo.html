@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Jogo da Velhinha"</title>
+    <link rel="shortcut icon" href="#">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./jogo.css"> 
+</head>
+    
+<body>
+    <main>
+        <h1 class="titulo">Jogo da Velhinha</h1>
+         
+        <section class="container" id="tabuleiro">
+       
+            <table>
+                <tr>
+                    <td id="1" onclick="jogar(1)"> </td> 
+                    <td id="2" onclick="jogar(2)"> </td>
+                    <td id="3" onclick="jogar(3)"> </td>
+                </tr>
+                <tr>
+                    <td id="4" onclick="jogar(4)"> </td>
+                    <td id="5" onclick="jogar(5)"> </td>
+                    <td id="6" onclick="jogar(6)"> </td>
+                </tr>
+                <tr>
+                    <td id="7" onclick="jogar(7)"> </td>
+                    <td id="8" onclick="jogar(8)"> </td>
+                    <td id="9" onclick="jogar(9)"> </td>
+                </tr>
+                <div #resultado></div>
+            </table>
+        </section>
+    </main>
+            <script src="./jogo.js"></script> 
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: "Itim", cursive;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.container{
+    width: 200px;
+    height: 200px;
+    margin-right: 200px;
+    margin-left: 200px;
+    border: 1px solid black;
+    background-color:blue;
+}
+
+table{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    font-size: 30px;
+    display: flexbox;
+}
+
+tr, td{
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+}
