@@ -28,6 +28,8 @@ table{
     border: 1px solid black;
     font-size: 30px;
     display: flexbox;
+    justify-content: space-around;
+    align-content: space-around;
 }
 
 tr, td{

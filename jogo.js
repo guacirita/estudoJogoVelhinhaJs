@@ -24,15 +24,18 @@ const jogar = (id) => {
             vez = 'X'
         }
     }
-}
+
 
     resultado.forEach(item=>{
     const casa1 = document.getElementById(item[0]).innerHTML
     const casa2 = document.getElementById(item[1]).innerHTML
     const casa3 = document.getElementById(item[2]).innerHTML
 
-    if(casa1 == 'X', casa2 == 'X', casa3 == 'X'){
+    if(casa1 == 'X' && casa2 == 'X' && casa3 == 'X'){
         alert('X venceu')
-        return
+      if(casa1 == O && casa2 == O && casa3 == 'O'){
+        alert('O venceu!')
+      }
     }
 })
+}
