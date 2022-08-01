@@ -1,9 +1,10 @@
-
+/* 
 *{
     margin: 0;
     padding: 0;
     outline: 0;
     font-family: "Itim", cursive;
+    font-size: 40px;
 }
 
 .titulo{
@@ -13,27 +14,26 @@
     padding-bottom: 50px;
 }
 
-.container{
-    width: 200px;
-    height: 200px;
-    margin-right: 200px;
-    margin-left: 200px;
-    border: 1px solid black;
-    background-color:blue;
+tbody{
+    width: 400px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto; 
+    border: 1px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
 }
 
 table{
     width: 200px;
     height: 200px;
-    border: 1px solid black;
-    font-size: 30px;
-    display: flexbox;
-    justify-content: space-around;
-    align-content: space-around;
-}
+} 
 
-tr, td{
+ 
+tr,td{
     width: 25px;
     height: 25px;
     border: 1px solid black;
-}
+} */

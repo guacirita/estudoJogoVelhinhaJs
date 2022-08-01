@@ -13,14 +13,14 @@ const resultado = [
   ]
 
 const jogar = (id) => {
-    const tabuleiro = document.getElementById(id)
+    const casa = document.getElementById(id)
 
-    if(tabuleiro.innerHTML == ''){
+    if(casa.innerHTML == ''){
         if(vez == 'X'){
-            tabuleiro.innerHTML = 'X'
+            casa.innerHTML = 'X'
             vez = 'O'
         }else{
-            tabuleiro.innerHTML = 'O'
+            casa.innerHTML = 'O'
             vez = 'X'
         }
     }
@@ -33,9 +33,24 @@ const jogar = (id) => {
 
     if(casa1 == 'X' && casa2 == 'X' && casa3 == 'X'){
         alert('X venceu')
+    }
       if(casa1 == O && casa2 == O && casa3 == 'O'){
         alert('O venceu!')
       }
-    }
-})
+    })
 }
+
+
+const tr = `<tr></tr>`
+const tabuleiro = document.querySelector('#tabuleiro')
+for(let i = 1; i < 9; i += 3){
+  tabuleiro.innerHTML += `
+  <tr>
+  <td id=${i} onclick="jogar(${i})" style="width: 25px; height: 25px;"></td>
+  <td id=${i + 1} onclick="jogar(${i + 1})" style="width: 25px; height: 25px;"></td>
+  <td id=${i + 2} onclick="jogar(${i + 2})" style="width: 25px; height: 25px;"></td>
+  </tr>
+  `
+}
+
+
