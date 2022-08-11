@@ -33,11 +33,14 @@ const jogar = (id) => {
 
     if(casa1 == 'X' && casa2 == 'X' && casa3 == 'X'){
         alert('X venceu')
+        jogo = false
+        return
     }
-      if(casa1 == O && casa2 == O && casa3 == 'O'){
+      if(casa1 == 'O' && casa2 == 'O' && casa3 == 'O'){
         alert('O venceu!')
-      }
-    })
+        jogo = false
+    }
+  })
 }
 
 
